@@ -1,0 +1,120 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&family=Montserrat:wght@800&family=Press+Start+2P&family=Roboto+Mono&display=swap');
+
+/* Reset */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffcb05;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo-properties{
+    width: 45vw;
+}
+
+/* Pokeball Start */
+main{
+    display: flex;
+    gap: 4rem;
+}
+
+.pokeball-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.pokeball-container:nth-child(2n) {
+    transform: translateY(-25px);
+}
+
+.pokeball {
+    position: relative;
+    width: 10vw;
+    transition: transform .25s ease-in-out;
+    z-index: 2;
+}
+
+.item-middle {
+    width: 10vw;
+}
+
+/* Poke Shadow Start */
+.pokeball-shadow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    height: 3.5vw;
+    width: 10vw;
+    border-radius: 100%;
+    transition: .3s;
+    transform: translateY(15px);
+}
+
+.pokeball-container:hover .pokeball-shadow{
+    transform: scale(.9) translateY(20px);
+}
+/* Poke Shadow End*/
+
+.pokeball-container:hover .leftPoke{
+    transform: translateY(-25px) rotate(-10deg);
+}
+
+.pokeball-container:hover .rightPoke{
+    transform: translateY(-25px) rotate(10deg);
+}
+
+.pokeball-container:hover .middlePoke{
+    transform: translateY(-25px);
+}
+
+.leftPoke,
+.rightPoke,
+.middlePoke {
+    height: fit-content;
+    width: fit-content;
+    transition: .3s;
+}
+.item-middle {
+    animation: pokeball 2s infinite;
+}
+
+.pokeball-container:hover .item-middle {
+    animation-play-state: paused;
+}
+
+@keyframes pokeball {
+    0%{transform: rotate(0deg);}
+    11%{transform: rotate(10deg);}
+    22%{transform: rotate(-10deg);}
+    33%{transform: rotate(10deg);}
+    33%{transform: rotate(0deg);}
+    100%{transform: rotate(0deg);}
+}
+/* Pokeball End */
+
+/* Footer Style Start */
+.text-container{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 2rem;
+}
+/* Footer Style End */
+
