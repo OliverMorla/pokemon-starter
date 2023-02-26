@@ -1,6 +1,10 @@
 # Pokémon Starter
 Welcome to Pokémon Starter! This project was created to practice using React.js. With this application, users can choose between the top 3 first generation Pokémon starters: Bulbasaur, Charmander, and Squirtle. Once a user clicks on a pokeball, the corresponding Pokémon card will be displayed.
 
+# Preview
+![pokemon-starter-preview](https://user-images.githubusercontent.com/73266650/221416434-186e07cd-3431-4c2c-9859-953bd9cf6b60.gif)
+https://raw.githack.com/OliverMorla/pokemon-starter/main/index.html
+
 # Installation
 To run this project locally, follow these steps:
 
