@@ -4,8 +4,6 @@ Welcome to Pokémon Starter! This project was created to practice using React.js
 # Preview
 ![pokemon-starter-preview](https://user-images.githubusercontent.com/73266650/221416434-186e07cd-3431-4c2c-9859-953bd9cf6b60.gif)
 
-https://raw.githack.com/OliverMorla/pokemon-starter/main/index.html
-
 # Installation
 To run this project locally, follow these steps:
 
