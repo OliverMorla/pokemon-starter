@@ -19,10 +19,11 @@ To use this application, simply click on the pokeball corresponding to the Poké
 # Technologies Used
 This project was created using the following technologies:
 
-React.js
-HTML
-CSS
-Credits
+* React.js
+* HTML
+* CSS
+
+# Credits 
 This project was created by Oliver Morla. Feel free to contact me if you have any questions or suggestions.
 
 # License
